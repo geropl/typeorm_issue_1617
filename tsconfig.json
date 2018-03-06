@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "noEmitOnError": false,
+        "noUnusedLocals": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "strictPropertyInitialization": false,
+        "downlevelIteration": true,
+        "sourceMap": true,
+        "declaration": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "target": "es5",
+        "lib": [
+            "es6",
+            "dom"
+        ],
+        "rootDir": "src",
+        "outDir": "dist",
+    },
+    "include": [
+        "src"
+    ]
+}

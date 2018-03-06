@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "name": "@typeorm/issue_1617",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node ./dist/main.js",
+    "prepare": "yarn clean && yarn build",
+    "clean": "rimraf ./dist",
+    "build": "tsc",
+    "debug": "node --inspect-brk ./dist/main.js",
+    "start-db": "docker run -e MYSQL_ROOT_PASSWORD=\"test-pw\" -p 33306:3306 -v \"$PWD/init-db:/docker-entrypoint-initdb.d\" mysql:5.7"
+  },
+  "dependencies": {
+    "mysql": "^2.15.0",
+    "reflect-metadata": "^0.1.10",
+    "typeorm": "~0.1.12",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.0",
+    "@types/uuid": "^3.1.0",
+    "rimraf": "^2.6.2",
+    "typescript": "^2.7.2"
+  }
+}
